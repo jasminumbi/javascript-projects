@@ -63,6 +63,19 @@ console.log(completeReversal(arrayTest3));
 // 3. Retrieve only the first 3 characters from strings with lengths larger than 3.
 // 4. Use a template literal to return the phrase We put the '___' in '___'. Fill the first blank with the modified string, and fill the second blank with the original string.
 
+function funPhrase(str) {
+    let char = "";
+    if(str.length <= 3){
+        str.slice(str.length - 1)
+    }else {
+        char = str.slice(0,3);
+    }
+    
+    return `We put the '${char}' in '${str}'!`;
+    //return char;
+}
+console.log(funPhrase("Applesauce"));
+
 // Test Function
 
 // 1. Outside of the function, define the variable str and initialize it with a string (e.g. 'Functions rock!').
